@@ -1,0 +1,110 @@
+:root{
+	--navBackGroundColor:#3A497B;
+	--MainFont:"Comfortaa", sans-serif;
+
+}
+
+body{
+	font-family: var(--MainFont);
+	background-color: #272B30;
+}
+.w-10{
+	width: 10%;
+}
+
+.myBtn{
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+.headerImage > img{
+	max-height: 15rem;
+	object-fit: cover;
+}
+.MynavBar{
+	background-color: var(--navBackGroundColor);
+}
+.myNavList a{
+	color: white;
+	transition: color 0.3s;
+	font-size: 0.8rem;
+}
+.myNavList a:hover{
+	color: #147EB0;
+}
+.myActive{
+	color: #147EB0 !important;
+}
+.myCard{
+	filter: grayscale(0.8);
+}
+.myCard:hover{
+	filter: grayscale(0);
+}
+.myCard{
+	border: 1px solid black;
+	transition: all 0.5s;
+	
+}
+.myCard:hover{
+	transform: scale(1.05);
+}
+.myFooter{
+	border-top: 1px black solid;
+}
+.myFooterSpan{
+	background-color: #32383E;
+	color: white;
+	font-size: 0.6rem;
+}
+.loader {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	position: relative;
+  }
+  .loader::after,
+  .loader::before {
+	content: '';  
+	box-sizing: border-box;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: #3A497B;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+	animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+	0% {
+	  transform: scale(0);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	  opacity: 0;
+	}
+  }
+.myLoader{
+	position: absolute;
+	right: 50%;
+	top: 50%;
+}
+.myBtnDetails{
+	color: #FFC107;
+	border: 1px solid #FFC107;
+}
+.myBtnDetails:hover{
+	background-color: #FFC107;
+	border: 1px solid #FFC107;
+}
+.exitBtn{
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	cursor: pointer;
+}
